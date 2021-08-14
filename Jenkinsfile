@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       steps {
         sh 'echo start'
-        archiveArtifacts(artifacts: 'docker', onlyIfSuccessful: true)
+        archiveArtifacts(artifacts: 'README.md', onlyIfSuccessful: true)
       }
     }
 
